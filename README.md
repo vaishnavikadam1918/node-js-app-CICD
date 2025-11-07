@@ -94,7 +94,7 @@ __Manage Jenkins → Credentials → System → Global__:
 * name: `node-app-deploy-cicd`
 * item-type: *_Pipeline_*
 
-![](./images/Screenshot%20(111).png)
+![](./images/new%20item.png)
 
 * Enable Trigger: GitHub hook trigger for GITScm polling
 * Defination: Pipeline script from SCM
