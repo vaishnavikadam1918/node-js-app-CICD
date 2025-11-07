@@ -88,7 +88,7 @@ __Manage Jenkins → Credentials → System → Global__:
   * username: `ubuntu`
   * private key: `Your-Private-Key`
 
-![](./images/Screenshot%20(110).png)
+![](./images/credential.png)
 
 ### Step-4: Create Item
 * name: `node-app-deploy-cicd`
@@ -99,11 +99,11 @@ __Manage Jenkins → Credentials → System → Global__:
 * Enable Trigger: GitHub hook trigger for GITScm polling
 * Defination: Pipeline script from SCM
 * SCM: Git
-* Repository: `https://github.com/abhigiri07/node-app-deploy-cicd.git`
+* Repository: `https://github.com/vaishnavikadam1918/node-js-app-CICD.git`
 * Branch: main
 * Script Path: `Your-jenkinsfile-name`
 
-![](./images/Screenshot%20(118).png)
+![](./images/repositoryurl.png)
 
 ### Step-5: Write Jenkinsfile
 ```
@@ -176,13 +176,13 @@ git push -u origin main
 ```
 Now we pushed code to GitHub, a webhook instantly notifies the Jenkins server. Jenkins then automatically pulls the latest code, installs dependencies, runs tests, builds the application, and deploys it to the target server
 
-![](./images/Screenshot%20(113).png)
+![](./images/nodejsappdeployment.png)
 
 ### Step-7: Browse Application on browser
 open browser and enter
 ```http://<Node-Server-Public-Ip>:3000```
 
-![](./images/Screenshot%20(112).png)
+![](./images/run%20jenkins.png)
 
 ### Conclusion
 In conclusion, deploying a __Node.js application using Jenkins CI/CD integrated with GitHub Webhooks__ provides a fully automated, efficient, and reliable deployment pipeline. By connecting GitHub with Jenkins through webhooks, every code push or pull request automatically triggers the build, test, and deployment stages — ensuring faster delivery and reducing manual effort.
