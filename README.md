@@ -103,7 +103,7 @@ __Manage Jenkins → Credentials → System → Global__:
 * Branch: main
 * Script Path: `Your-jenkinsfile-name`
 
-![](./images/repositoryurl.png)
+![](./images/repo%20url.png)
 
 ### Step-5: Write Jenkinsfile
 ```
